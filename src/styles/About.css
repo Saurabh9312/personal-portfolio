@@ -126,15 +126,50 @@
     color: #808080;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+
+    /* Tablet breakpoint */
     .about-content {
         flex-direction: column;
         gap: 3rem;
     }
 
+    .about-text {
+        text-align: center;
+    }
+
+    .about-visual {
+        order: -1;
+        /* Show code card first */
+        width: 100%;
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* Mobile breakpoint */
+    .about-title {
+        font-size: 2rem;
+    }
+
     .about-stats {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
-        text-align: center;
+        /* Stack stats */
+        gap: 2rem;
+    }
+
+    .code-card {
+        padding: 1rem;
+        font-size: 0.8rem;
+        /* Smaller code text */
+    }
+
+    .code-content pre {
+        overflow-x: auto;
+        /* Scroll if code is too long */
     }
 }

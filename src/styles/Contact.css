@@ -88,6 +88,21 @@
     transition: color 0.3s ease;
 }
 
-.social-link:hover {
-    color: var(--primary);
+@media (max-width: 600px) {
+    .contact {
+        padding: 4rem 0;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .footer {
+        padding: 2rem 0;
+    }
+
+    .social-links {
+        gap: 1rem;
+    }
 }

@@ -102,17 +102,49 @@
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 110%;
+        top: 100%;
+        /* Position directly below the bar */
         left: 0;
+        right: 0;
         width: 100%;
-        background: #0a0a0a;
+        background: rgba(10, 10, 10, 0.95);
+        backdrop-filter: blur(20px);
         padding: 2rem;
         border-radius: 20px;
-        border: 1px solid rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transform-origin: top;
+        animation: menuSlide 0.3s ease forwards;
+        margin-top: 10px;
+    }
+
+    @keyframes menuSlide {
+        from {
+            opacity: 0;
+            transform: scaleY(0.9);
+        }
+
+        to {
+            opacity: 1;
+            transform: scaleY(1);
+        }
     }
 
     .nav-link {
-        font-size: 1.1rem;
-        padding: 0.5rem 0;
+        font-size: 1.2rem;
+        padding: 1rem 0;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .nav-link:last-of-type {
+        border-bottom: none;
+        margin-bottom: 1rem;
+    }
+
+    .btn-hire {
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
     }
 }

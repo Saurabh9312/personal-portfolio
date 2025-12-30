@@ -42,7 +42,18 @@
     color: var(--primary);
 }
 
-.skill-name {
-    font-weight: 600;
-    color: var(--text-primary);
+@media (max-width: 600px) {
+    .skills {
+        padding: 4rem 0;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns on mobile */
+        gap: 1rem;
+    }
+
+    .skill-card {
+        padding: 1.5rem 1rem;
+    }
 }

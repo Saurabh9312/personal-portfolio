@@ -107,7 +107,21 @@
 }
 
 @media (max-width: 768px) {
+    .projects {
+        padding: 4rem 0;
+    }
+
     .projects-grid {
         grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .project-card:hover {
+        transform: none;
+        /* Disable hover lift on touch devices */
+    }
+
+    .project-image {
+        height: 200px;
     }
 }
