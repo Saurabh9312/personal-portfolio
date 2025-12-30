@@ -126,7 +126,8 @@
     color: #808080;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
+    /* Tablet/Laptop breakpoint */
 
     /* Tablet breakpoint */
     .about-content {

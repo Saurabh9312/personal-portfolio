@@ -74,14 +74,61 @@
     font-weight: 600;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+    .education {
+        padding: 4rem 0;
+    }
 
-    .education-table th,
+    .education-table-container {
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        overflow-x: visible;
+    }
+
+    .education-table,
+    .education-table tbody,
+    .education-table tr,
     .education-table td {
-        padding: 1rem;
+        display: block;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .education-table thead {
+        display: none;
+    }
+
+    .education-table tr {
+        background: var(--bg-card);
+        margin-bottom: 1.5rem;
+        border-radius: 16px;
+        padding: 1.5rem;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .education-table tr:hover {
+        transform: translateY(-5px);
+        background: var(--bg-card);
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .education-table td {
+        padding: 0.5rem 0;
+        border-bottom: none;
+        text-align: left;
+    }
+
+    .education-table td:last-child {
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
     }
 
     .edu-degree {
-        font-size: 1rem;
+        font-size: 1.25rem;
+        color: var(--primary);
     }
 }
