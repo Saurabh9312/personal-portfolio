@@ -8,6 +8,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact, { Footer } from './components/Contact';
 import BackgroundEffect from './components/BackgroundEffect';
+import InstallPWA from './components/InstallPWA';
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -32,6 +33,7 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
+      <InstallPWA />
     </div>
   );
 }
